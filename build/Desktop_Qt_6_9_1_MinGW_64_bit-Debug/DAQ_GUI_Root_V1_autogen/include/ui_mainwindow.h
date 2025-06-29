@@ -29,15 +29,15 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
-    QTextEdit *terminalRxOutput;
     QLabel *label;
+    QTextEdit *terminalRxOutput;
     QLabel *label_2;
-    QTextEdit *terminalOutput;
-    QPushButton *stop;
-    QPushButton *exit;
-    QPushButton *reset;
-    QPushButton *startread;
     QPushButton *analyzeButton;
+    QTextEdit *terminalOutput;
+    QPushButton *startread;
+    QPushButton *stop;
+    QPushButton *reset;
+    QPushButton *exit;
     QMenuBar *menubar;
     QMenu *menuDAQ;
     QStatusBar *statusbar;
@@ -51,97 +51,24 @@ public:
         centralwidget->setObjectName("centralwidget");
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName("gridLayout");
-        terminalRxOutput = new QTextEdit(centralwidget);
-        terminalRxOutput->setObjectName("terminalRxOutput");
-
-        gridLayout->addWidget(terminalRxOutput, 11, 2, 5, 1);
-
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         QFont font;
         font.setPointSize(14);
         label->setFont(font);
 
-        gridLayout->addWidget(label, 7, 2, 1, 1);
+        gridLayout->addWidget(label, 12, 2, 1, 1);
+
+        terminalRxOutput = new QTextEdit(centralwidget);
+        terminalRxOutput->setObjectName("terminalRxOutput");
+
+        gridLayout->addWidget(terminalRxOutput, 14, 2, 4, 1);
 
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
         label_2->setFont(font);
 
         gridLayout->addWidget(label_2, 1, 2, 1, 1);
-
-        terminalOutput = new QTextEdit(centralwidget);
-        terminalOutput->setObjectName("terminalOutput");
-
-        gridLayout->addWidget(terminalOutput, 4, 2, 1, 1);
-
-        stop = new QPushButton(centralwidget);
-        stop->setObjectName("stop");
-        stop->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #4CAF50;       /* nice green */\n"
-"    color: white;\n"
-"    border: none;\n"
-"    border-radius: 6px;\n"
-"    padding: 8px 16px;\n"
-"    font-weight: bold;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #45a049;\n"
-"}\n"
-""));
-
-        gridLayout->addWidget(stop, 13, 0, 1, 1);
-
-        exit = new QPushButton(centralwidget);
-        exit->setObjectName("exit");
-        exit->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #4CAF50;       /* nice green */\n"
-"    color: white;\n"
-"    border: none;\n"
-"    border-radius: 6px;\n"
-"    padding: 8px 16px;\n"
-"    font-weight: bold;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #45a049;\n"
-"}\n"
-""));
-
-        gridLayout->addWidget(exit, 15, 0, 1, 1);
-
-        reset = new QPushButton(centralwidget);
-        reset->setObjectName("reset");
-        reset->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #4CAF50;       /* nice green */\n"
-"    color: white;\n"
-"    border: none;\n"
-"    border-radius: 6px;\n"
-"    padding: 8px 16px;\n"
-"    font-weight: bold;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #45a049;\n"
-"}\n"
-""));
-
-        gridLayout->addWidget(reset, 14, 0, 1, 1);
-
-        startread = new QPushButton(centralwidget);
-        startread->setObjectName("startread");
-        startread->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #4CAF50;       /* nice green */\n"
-"    color: white;\n"
-"    border: none;\n"
-"    border-radius: 6px;\n"
-"    padding: 8px 16px;\n"
-"    font-weight: bold;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #45a049;\n"
-"}\n"
-""));
-
-        gridLayout->addWidget(startread, 12, 0, 1, 1);
 
         analyzeButton = new QPushButton(centralwidget);
         analyzeButton->setObjectName("analyzeButton");
@@ -158,7 +85,80 @@ public:
 "}\n"
 ""));
 
-        gridLayout->addWidget(analyzeButton, 11, 0, 1, 1);
+        gridLayout->addWidget(analyzeButton, 4, 0, 1, 1);
+
+        terminalOutput = new QTextEdit(centralwidget);
+        terminalOutput->setObjectName("terminalOutput");
+
+        gridLayout->addWidget(terminalOutput, 4, 2, 4, 1);
+
+        startread = new QPushButton(centralwidget);
+        startread->setObjectName("startread");
+        startread->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #4CAF50;       /* nice green */\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px 16px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+""));
+
+        gridLayout->addWidget(startread, 5, 0, 1, 1);
+
+        stop = new QPushButton(centralwidget);
+        stop->setObjectName("stop");
+        stop->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #4CAF50;       /* nice green */\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px 16px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+""));
+
+        gridLayout->addWidget(stop, 6, 0, 1, 1);
+
+        reset = new QPushButton(centralwidget);
+        reset->setObjectName("reset");
+        reset->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #4CAF50;       /* nice green */\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px 16px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+""));
+
+        gridLayout->addWidget(reset, 7, 0, 1, 1);
+
+        exit = new QPushButton(centralwidget);
+        exit->setObjectName("exit");
+        exit->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #4CAF50;       /* nice green */\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px 16px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+""));
+
+        gridLayout->addWidget(exit, 12, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -183,11 +183,11 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Data Recieved", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Command Recieved", nullptr));
-        stop->setText(QCoreApplication::translate("MainWindow", "Stop", nullptr));
-        exit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
-        reset->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
-        startread->setText(QCoreApplication::translate("MainWindow", "Start_Read", nullptr));
         analyzeButton->setText(QCoreApplication::translate("MainWindow", "Analyze", nullptr));
+        startread->setText(QCoreApplication::translate("MainWindow", "Start_Read", nullptr));
+        stop->setText(QCoreApplication::translate("MainWindow", "Stop", nullptr));
+        reset->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
+        exit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
         menuDAQ->setTitle(QCoreApplication::translate("MainWindow", "DAQ", nullptr));
     } // retranslateUi
 
