@@ -1,0 +1,20 @@
+# ninja log v6
+2	510	7728828875138484	DAQ_GUI_Root_V1_autogen/timestamp	4958d4a17e985437
+2	510	7728828875138484	DAQ_GUI_Root_V1_autogen/mocs_compilation.cpp	4958d4a17e985437
+2	510	7728828875138484	E:/vecc/DAQ_GUI_Root_V1/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/DAQ_GUI_Root_V1_autogen/timestamp	4958d4a17e985437
+2	510	7728828875138484	E:/vecc/DAQ_GUI_Root_V1/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/DAQ_GUI_Root_V1_autogen/mocs_compilation.cpp	4958d4a17e985437
+512	1756	7728828875608560	CMakeFiles/DAQ_GUI_Root_V1.dir/DAQ_GUI_Root_V1_autogen/mocs_compilation.cpp.obj	24ee8c181b96dc91
+516	2064	7728828875658491	CMakeFiles/DAQ_GUI_Root_V1.dir/mainwindow.cpp.obj	1c8ebc6b394c20b8
+5	99	7728833165679344	DAQ_GUI_Root_V1_autogen/timestamp	4958d4a17e985437
+5	99	7728833165679344	DAQ_GUI_Root_V1_autogen/mocs_compilation.cpp	4958d4a17e985437
+5	99	7728833165679344	E:/vecc/DAQ_GUI_Root_V1/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/DAQ_GUI_Root_V1_autogen/timestamp	4958d4a17e985437
+5	99	7728833165679344	E:/vecc/DAQ_GUI_Root_V1/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/DAQ_GUI_Root_V1_autogen/mocs_compilation.cpp	4958d4a17e985437
+99	1350	7728833166619594	CMakeFiles/DAQ_GUI_Root_V1.dir/main.cpp.obj	87ea0c4144be0569
+104	1628	7728833166669331	CMakeFiles/DAQ_GUI_Root_V1.dir/mainwindow.cpp.obj	1c8ebc6b394c20b8
+1628	1776	7728833181912371	DAQ_GUI_Root_V1.exe	1eb4e7f7fa1ac5e5
+17	135	7728835521632241	DAQ_GUI_Root_V1_autogen/timestamp	4958d4a17e985437
+17	135	7728835521632241	DAQ_GUI_Root_V1_autogen/mocs_compilation.cpp	4958d4a17e985437
+17	135	7728835521632241	E:/vecc/DAQ_GUI_Root_V1/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/DAQ_GUI_Root_V1_autogen/timestamp	4958d4a17e985437
+17	135	7728835521632241	E:/vecc/DAQ_GUI_Root_V1/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/DAQ_GUI_Root_V1_autogen/mocs_compilation.cpp	4958d4a17e985437
+135	1578	7728835522819969	CMakeFiles/DAQ_GUI_Root_V1.dir/mainwindow.cpp.obj	1c8ebc6b394c20b8
+1578	1719	7728835537249734	DAQ_GUI_Root_V1.exe	1eb4e7f7fa1ac5e5

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="11" column="2" rowspan="5">
+     <widget class="QTextEdit" name="terminalRxOutput"/>
+    </item>
+    <item row="7" column="2">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Data Recieved</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Command Recieved</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QTextEdit" name="terminalOutput"/>
+    </item>
+    <item row="13" column="0">
+     <widget class="QPushButton" name="stop">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #4CAF50;       /* nice green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="0">
+     <widget class="QPushButton" name="exit">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #4CAF50;       /* nice green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0">
+     <widget class="QPushButton" name="reset">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #4CAF50;       /* nice green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QPushButton" name="startread">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #4CAF50;       /* nice green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Start_Read</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QPushButton" name="analyzeButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton#analyzeButton {
+    background-color: #00bcd4;       /* fresh cyan */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+QPushButton#analyzeButton:hover {
+    background-color: #0097a7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Analyze</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>542</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDAQ">
+    <property name="title">
+     <string>DAQ</string>
+    </property>
+   </widget>
+   <addaction name="menuDAQ"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
